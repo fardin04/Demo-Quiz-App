@@ -325,3 +325,15 @@ footer{
 .QuitBtn:hover{
     background-color: rgb(235, 64, 64);;
 }
+    /* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 90%;
+  }
+}
