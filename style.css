@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+
+}
+body{
+    background-color: aliceblue;
+}
+.QuizApp{
+    width: 340px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    box-shadow: rgba(17, 17, 17, 0.1) 0px 10px 50px;
+    transform: translate(-50% , -50%);
+    border-radius: 45px;
+
+}
+.img img{
+    width: 100%;
+}
+.text{
+    width: 90%;
+    margin: auto;
+    word-spacing: 2px;
+    line-height: 30px;
+}
+.text h3{
+    margin-top: 25px;
+}
+.MyBtn{
+    margin-left: 180px;
+    margin-top: 44px;
+}
+.MyBtn button{
+    font-size: 24px;
+    font-weight: 500px;
+    background-color:rgb(127, 219, 255);
+
+    border: none;
+    outline: none;
+    color: black;
+    padding: 6px 26px;
+    cursor: pointer;
+    border-radius: 57px 0px 49px 0px;
+    transition: 0.3s ease-in-out;
+}
+.MyBtn button:hover{
+    background-color :rgb(7, 175, 241);
+
+}
+.RulesBox.ActiveInfo{
+    opacity: 1;
+    z-index: 5;
+    pointer-events: auto;
+    transform: translate(-50% , -50%) scale(1);
+}
+
+.RulesBox{
+    width: 340px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    box-shadow: rgba(17, 17, 17, 0.1) 0px 10px 50px;
+    transform: translate(-50% , -50%);
+    border-radius: 45px;
+    opacity: 0;
+    pointer-events: none;
+}
+.RulesTitle{
+    margin-top: 40px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    padding: 5px 5px;
+}
+
+.RulesList{
+
+    width: 80%;
+    margin: auto;
+    line-height: 30px;
+    margin-top: 40px;
+}
+.MyBtns button{
+    font-size: 24px;
+    font-weight: 500px;
+    background-color:rgb(127, 219, 255);
+    border: none;
+    outline: none;
+    color: black;
+    padding: 6px 26px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.ExitBtn{
+    border-radius:   0px 57px  0px 49px   ;
+    margin-left: 0px;
+    margin-top: 75px;
+}
+.ExitBtn:hover{
+    background-color :rgb(241, 7, 7);
+
+}
+.ConBtn{
+    border-radius: 57px 0px 49px 0px;
+
+    margin-left: 91px;
+    margin-top: 8px;
+}
+.ConBtn:hover{
+    background-color :rgb(7, 175, 241);
+
+}
+.Question.ActiveQuiz{
+    opacity: 1;
+    z-index: 5;
+    pointer-events: auto;
+    transform: translate(-50% , -50%) scale(1);
+}
+.Question{
+
+    width: 340px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    box-shadow: rgba(17, 17, 17, 0.1) 0px 10px 50px;
+    transform: translate(-50% , -50%);
+    border-radius: 45px;
+    opacity: 0;
+    pointer-events: none;
+}
+.Header{
+    position: relative;
+    z-index: 2;
+    height: 70px;
+    padding: 0 30px;
+    border-radius: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.TimeCount{
+    color: rgb(3, 77, 238);
+    background-color: #c7e6ff;
+    border: 1px solid #b0dcff;
+    height: 25px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 120px;
+}
+.Sec{
+    font-size: 17px;
+    color: white;
+    background: rgb(14, 12, 12);
+    height: 26px;
+    width: 40px;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 26px;
+    border: 1px solid rgb(14, 12, 12);
+    user-select: none;
+}
+.TimeLine{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 3px;
+    background: rgb(127, 219, 255);
+}
+.section{
+    padding: 25px 30px 25px 30px;
+}
+.Q{
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 35px;
+}
+.MyOptions{
+    display: block;
+    padding: 30px 0px;
+}
+.Options{
+    background: rgb(233, 240, 247);
+    border: 1px solid #8ec3f1;
+    border-radius: 8px;
+    padding: 8px 15px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Options:hover {
+    color: #080f18;
+    background-color :rgb(7, 175, 241);
+    border: 1px solid #b8daff;
+}
+.Options.correct{
+    color: #181818;
+    background: aquamarine;
+    border: 1px solid #ddd6d6;
+}
+.Options.incorrect{
+    color: #181818;
+    background: rgb(235, 64, 64);
+    border: 1px solid #ddd6d6;
+}
+.Options.disabled{
+    pointer-events: none;
+}
+footer{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid lightgrey;
+}
+.TotalQ{
+    padding-bottom: 10px;
+    padding-left: 30px;
+
+}
+.NextQ{
+    height: 50px;
+    width: 120px;
+    border-radius: 57px 0px 49px 0px;
+    padding: 0;
+    justify-content: center;
+    margin-left: 91px;
+    margin-top: -5px;
+    background-color:rgb(127, 219, 255);
+    outline: none;
+    border: none;
+    box-shadow: rgba(17, 17, 17, 0.1) 0px 10px 50px;
+    display: none;
+
+
+
+}
+.NextQ:hover{
+    background-color :rgb(7, 175, 241);
+}
+
+.ResultBox {
+    width: 300px;
+    height: 550px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    background-color: #fff;
+    border-radius: 45px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    transition: all 0.3s ease;
+    pointer-events: none;
+
+  }
+.ResultBox.ActiveResult{
+    opacity: 1;
+    z-index: 5;
+    pointer-events: auto;
+    transform: translate(-50% , -50%) scale(1);
+
+}
+.ResultImg img{
+    width: 100%;
+    height: 180px;
+    margin-bottom: 180px;
+}
+.WinText{
+    font-size: 20px;
+    font-weight: 500;
+}
+.Score span{
+    display: flex;
+    margin: 10px 0px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.Score span p{
+    padding: 0px 4px;
+    font-weight: 700;
+}
+.FinalBtns{
+    display: flex;
+    margin: 20px 0px;
+}
+.FinalBtns button{
+    margin: 0 20px;
+    height: 45px;
+    padding: 0 25px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+.ReplayBtn{
+    background-color: rgb(7, 175, 241);
+}
+.ReplayBtn:hover{
+    background-color: aquamarine;
+}
+.QuitBtn{
+    background-color: rgb(7, 175, 241);
+}
+.QuitBtn:hover{
+    background-color: rgb(235, 64, 64);;
+}

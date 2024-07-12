@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="QuizApp">
+        <div class="img">
+            <img src="img/question.svg" alt="">
+        </div>
+        <div class="text">
+            <h3>Quiz App</h3>
+            <br>
+            <p>Discover a fun, interactive quiz app featuring diverse topics, customizable quizzes, and real-time
+                scoring. Challenge friends, track progress, and boost your knowledge anytime, anywhere!</p>
+            <br>
+        </div>
+        <div class="MyBtn">
+            <Button>Start Quiz</Button>
+
+        </div>
+    </div>
+    <div class="RulesBox">
+        <div class="RulesTitle">Rules Of This Quiz</div>
+        <div class="RulesList">
+            <ol>
+                <li>Each question has a <strong>20-second</strong> time limit.</li>
+                <li>Once you select an answer, it cannot be changed.</li>
+                <li>If time runs out, you will not be able to select an answer.</li>
+                <li>
+                    Points are awarded only for correct answers selected within the time
+                    limit.
+                </li>
+                <li>
+                    The quiz progresses to the next question automatically after each
+                    answer or when time runs out.
+                </li>
+            </ol>
+        </div>
+        <div class="MyBtns">
+            <button class="ExitBtn">Exit </button>
+            <button class="ConBtn">Continue </button>
+        </div>
+    </div>
+    <div class="Question">
+        <div class="Header">
+            <div class="Title" style="font-size: 15px; "><strong>Question</strong></div>
+            <div class="TimeCount">
+                <div class="TimeLeft">Time Left</div>
+                <div class="Sec">20</div>
+            </div>
+            <div class="TimeLine"></div>
+        </div>
+        <div class="section">
+            <div class="Q">
+                <!-- <span class="Q1">1. What is the main purpose of the 'main' function in C and C++?
+
+                </span> -->
+            </div>
+            <div class="MyOptions">
+                <div class="Options">
+                    <!-- <span>A. To initialize variables
+                    </span>
+                    <i class="fa-solid fa-square-xmark"></i> -->
+                </div>
+
+            </div>
+            <footer>
+                <div class="TotalQ">
+                    <!-- <p>1 of 5 Question</p> -->
+                </div>
+                <button class="NextQ">Next Question</button>
+            </footer>
+        </div>
+        <div class="ResultBox">
+            <div class="ResultImg">
+                <img src="img/win.jpg" alt="">
+            </div>
+            <div class="WinText">You Have Finished The Quiz</div>
+            <div class="Score">
+                <span>Carry On You Got <p>0</p> Out Of <p>5</p></span>
+            </div>
+            <div class="FinalBtns">
+                <button class="QuitBtn">Quit</button>
+                <button class="ReplayBtn">Replay</button>
+
+            </div>
+        </div>
+        <script src="Js/script.js"></script>
+        <script src="Js/questions.js"></script>
+</body>
+
+</html>
